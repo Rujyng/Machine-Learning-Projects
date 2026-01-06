@@ -1,5 +1,3 @@
-# code/run_task3.py
-
 import os
 import joblib
 import numpy as np
@@ -171,12 +169,12 @@ def main():
     os.makedirs(model_dir, exist_ok=True)
 
     # save best model
-    best_model_path = os.path.join(model_dir, f"task3_best_{best_name}.joblib")
+    best_model_path = os.path.join(model_dir, f"best_{best_name}.joblib")
     joblib.dump(models[best_name], best_model_path)
     print("\nSaved best model to:", best_model_path)
 
     # save TF-IDF transformer
-    tfidf_path = os.path.join(model_dir, "task3_tfidf.joblib")
+    tfidf_path = os.path.join(model_dir, "tfidf.joblib")
     joblib.dump(tfidf, tfidf_path)
     print("Saved TF-IDF transformer to:", tfidf_path)
 
