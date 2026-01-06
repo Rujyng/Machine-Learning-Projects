@@ -1,0 +1,194 @@
+nguye495@cf405-09:~/Documents/data571/202540_data571_nguye495/final_proj/code$ python3 run_task3.py 
+Loaded config:
+  N_TRAIN = 53445
+  N_DEV   = 53379
+  D       = 75000
+  C       = 1
+
+Loading training data...
+Loading dev data...
+Applying TF-IDF transformation...
+X_train shape: (53445, 75000)
+X_dev shape:   (53379, 75000)
+y_train shape: (53445,)
+y_dev shape:   (53379,)
+train nnz: 4965688
+dev nnz:   4980777
+
+Computing mean baseline...
+Mean baseline MSE: 1.6862063200457207
+
+Training models and evaluating on dev set...
+
+Training linear...
+linear MSE = 4.749015755827524
+
+Training ridge_0.1...
+ridge_0.1 MSE = 0.9688142486556179
+
+Training ridge_1.0...
+ridge_1.0 MSE = 0.8269266488508751
+
+Training ridge_3.0...
+ridge_3.0 MSE = 0.834905050629493
+
+Training ridge_3.5...
+ridge_3.5 MSE = 0.8396495552688075
+
+Training ridge_4.0...
+ridge_4.0 MSE = 0.8445166052657344
+
+Training ridge_10.0...
+ridge_10.0 MSE = 0.8986423500742847
+
+Training linearsvr_C_0.01...
+linearsvr_C_0.01 MSE = 1.5260573353005742
+
+Training linearsvr_C_0.1...
+linearsvr_C_0.1 MSE = 1.0238270459617298
+
+Training linearsvr_C_0.25...
+linearsvr_C_0.25 MSE = 0.9230115278557919
+
+Training linearsvr_C_0.5...
+linearsvr_C_0.5 MSE = 0.8829175380803588
+
+Training linearsvr_C_0.7...
+linearsvr_C_0.7 MSE = 0.8735939765177061
+
+Training linearsvr_C_0.75...
+linearsvr_C_0.75 MSE = 0.8726307026456307
+
+Training linearsvr_C_1.0...
+linearsvr_C_1.0 MSE = 0.8706157023801522
+
+Training linearsvr_C_2.0...
+linearsvr_C_2.0 MSE = 0.8828386250576574
+
+Training linearsvr_C_4.0...
+linearsvr_C_4.0 MSE = 0.9262312380053868
+
+Training linearsvr_C_5.0...
+linearsvr_C_5.0 MSE = 0.9472743879996449
+
+Training logreg_C_0.01...
+logreg_C_0.01 HARD accuracy = 0.5405121864403605
+logreg_C_0.01 SOFT MSE = 1.5595919257702002
+logreg_C_0.01 HARD MSE = 2.5859607710897543
+
+Training logreg_C_0.1...
+logreg_C_0.1 HARD accuracy = 0.5704677869574177
+logreg_C_0.1 SOFT MSE = 1.161476680983093
+logreg_C_0.1 HARD MSE = 2.202645235017516
+
+Training logreg_C_1.0...
+logreg_C_1.0 HARD accuracy = 0.6329642743400963
+logreg_C_1.0 SOFT MSE = 0.8224302887312088
+logreg_C_1.0 HARD MSE = 1.3123700331591075
+
+Training logreg_C_3.0...
+logreg_C_3.0 HARD accuracy = 0.6374042226343694
+logreg_C_3.0 SOFT MSE = 0.761404371829234
+logreg_C_3.0 HARD MSE = 1.177597931770921
+
+Training logreg_C_5.0...
+logreg_C_5.0 HARD accuracy = 0.6348751381629479
+logreg_C_5.0 SOFT MSE = 0.7513758077573457
+logreg_C_5.0 HARD MSE = 1.1537870698214654
+
+Training logreg_C_7.0...
+logreg_C_7.0 HARD accuracy = 0.6314093557391484
+logreg_C_7.0 SOFT MSE = 0.7508584588479954
+logreg_C_7.0 HARD MSE = 1.1463122201614868
+
+Training logreg_C_10.0...
+logreg_C_10.0 HARD accuracy = 0.6269881414039229
+logreg_C_10.0 SOFT MSE = 0.7554928927427658
+logreg_C_10.0 HARD MSE = 1.1441765488300644
+
+Training logreg_C_12.0...
+logreg_C_12.0 HARD accuracy = 0.6250960115401187
+logreg_C_12.0 SOFT MSE = 0.7598488427121106
+logreg_C_12.0 HARD MSE = 1.1432023829595908
+
+Training logreg_C_15.0...
+logreg_C_15.0 HARD accuracy = 0.6224357893553645
+logreg_C_15.0 SOFT MSE = 0.7669527758378465
+logreg_C_15.0 HARD MSE = 1.1464058899567247
+
+Training svc_C_1.0...
+svc_C_1.0 MSE = 1.156690833473838
+
+Training svc_C_2.0...
+svc_C_2.0 MSE = 1.1856910020794695
+
+Training svc_C_3.0...
+svc_C_3.0 MSE = 1.210195020513685
+
+Training svc_C_5.0...
+svc_C_5.0 MSE = 1.2470447179602466
+
+Training ridgeclf_1.0...
+ridgeclf_1.0 MSE = 1.255606137244984
+
+Training ridgeclf_2.0...
+ridgeclf_2.0 MSE = 1.2919687517563088
+
+Training ridgeclf_5.0...
+ridgeclf_5.0 MSE = 1.3945746454598251
+
+Training ridgeclf_7.0...
+ridgeclf_7.0 MSE = 1.4652391389872421
+
+Summary of MSEs:
+baseline_mean = 1.6862063200457207
+linear = 4.749015755827524
+ridge_0.1 = 0.9688142486556179
+ridge_1.0 = 0.8269266488508751
+ridge_3.0 = 0.834905050629493
+ridge_3.5 = 0.8396495552688075
+ridge_4.0 = 0.8445166052657344
+ridge_10.0 = 0.8986423500742847
+linearsvr_C_0.01 = 1.5260573353005742
+linearsvr_C_0.1 = 1.0238270459617298
+linearsvr_C_0.25 = 0.9230115278557919
+linearsvr_C_0.5 = 0.8829175380803588
+linearsvr_C_0.7 = 0.8735939765177061
+linearsvr_C_0.75 = 0.8726307026456307
+linearsvr_C_1.0 = 0.8706157023801522
+linearsvr_C_2.0 = 0.8828386250576574
+linearsvr_C_4.0 = 0.9262312380053868
+linearsvr_C_5.0 = 0.9472743879996449
+logreg_C_0.01_soft = 1.5595919257702002
+logreg_C_0.01_hard = 2.5859607710897543
+logreg_C_0.1_soft = 1.161476680983093
+logreg_C_0.1_hard = 2.202645235017516
+logreg_C_1.0_soft = 0.8224302887312088
+logreg_C_1.0_hard = 1.3123700331591075
+logreg_C_3.0_soft = 0.761404371829234
+logreg_C_3.0_hard = 1.177597931770921
+logreg_C_5.0_soft = 0.7513758077573457
+logreg_C_5.0_hard = 1.1537870698214654
+logreg_C_7.0_soft = 0.7508584588479954
+logreg_C_7.0_hard = 1.1463122201614868
+logreg_C_10.0_soft = 0.7554928927427658
+logreg_C_10.0_hard = 1.1441765488300644
+logreg_C_12.0_soft = 0.7598488427121106
+logreg_C_12.0_hard = 1.1432023829595908
+logreg_C_15.0_soft = 0.7669527758378465
+logreg_C_15.0_hard = 1.1464058899567247
+svc_C_1.0 = 1.156690833473838
+svc_C_2.0 = 1.1856910020794695
+svc_C_3.0 = 1.210195020513685
+svc_C_5.0 = 1.2470447179602466
+ridgeclf_1.0 = 1.255606137244984
+ridgeclf_2.0 = 1.2919687517563088
+ridgeclf_5.0 = 1.3945746454598251
+ridgeclf_7.0 = 1.4652391389872421
+
+Best model: logreg_C_7.0 (MSE = 0.7508584588479954)
+
+Saved best model to: /home/nguye495/Documents/data571/202540_data571_nguye495/final_proj/code/models/task3_best_logreg_C_7.0.joblib
+Saved TF-IDF transformer to: /home/nguye495/Documents/data571/202540_data571_nguye495/final_proj/code/models/task3_tfidf.joblib
+
+Done.
